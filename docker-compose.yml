@@ -1,0 +1,20 @@
+# lean-server/docker-compose.yml
+services:
+  lean-server:
+    build:
+      context: .
+      args:
+        LEAN_TOOLCHAIN: "leanprover/lean4:v4.24.0"
+        MATHLIB_REF: "v4.24.0"
+    environment:
+      MATHLIB_ROOT: "/opt/mathlib4"
+    ports:
+      - "8888:8000"
+    volumes:
+      # чтобы не пересобирать mathlib каждый раз при ребилде контейнера
+      - mathlib_lake_cache:/opt/mathlib4/.lake
+      - elan_cache:/root/.elan
+
+volumes:
+  mathlib_lake_cache:
+  elan_cache:
