@@ -12,6 +12,8 @@ bash <(curl -fsSL https://raw.githubusercontent.com/andreykhalov/lean-checker/ma
 ```
 Параметры (env): `REPO_URL`, `TARGET_DIR`, `BRANCH`. По умолчанию клонирует в `~/lean-checker` и запускает `docker compose up --build -d`.
 
+> Производительность: окружение `lake env` собирается один раз при старте приложения и кэшируется; проверки гоняются через `lean --json` с готовыми olean. При включении переменной `LEAN_SERVER=1` можно попробовать экспериментальный режим `lean --server` (кэширование в памяти), но по умолчанию он выключен.
+
 ### Ручной запуск
 ```bash
 git clone https://github.com/andreykhalov/lean-checker.git
