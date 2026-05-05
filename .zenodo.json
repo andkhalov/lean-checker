@@ -1,0 +1,49 @@
+{
+  "title": "lean-checker: A Lean 4 + Mathlib Verification Service",
+  "description": "A Dockerized FastAPI service that verifies Lean 4 source code inside a pinned Mathlib environment and returns structured JSON diagnostics with error coordinates.",
+  "upload_type": "software",
+  "license": "MIT",
+  "version": "1.0.0",
+  "language": "eng",
+  "access_right": "open",
+  "keywords": [
+    "Lean 4",
+    "Mathlib",
+    "theorem proving",
+    "proof verification",
+    "REPL",
+    "Docker",
+    "FastAPI",
+    "JSON diagnostics"
+  ],
+  "creators": [
+    {
+      "name": "Khalov, Andrey P.",
+      "affiliation": "Moscow Institute of Physics and Technology (MIPT); Federal Research Center \"Computer Science and Control\" of the Russian Academy of Sciences",
+      "orcid": "0009-0005-4584-8245"
+    },
+    {
+      "name": "Ataeva, Olga M.",
+      "affiliation": "Federal Research Center \"Computer Science and Control\" of the Russian Academy of Sciences",
+      "orcid": "0000-0003-0367-5575"
+    },
+    {
+      "name": "Tuchkova, Natalia P.",
+      "affiliation": "Federal Research Center \"Computer Science and Control\" of the Russian Academy of Sciences",
+      "orcid": "0000-0001-5357-9640"
+    }
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/andkhalov/SciLib-GRC21",
+      "relation": "isPartOf",
+      "scheme": "url"
+    }
+  ],
+  "communities": [
+    {
+      "identifier": "iswc"
+    }
+  ],
+  "notes": "Copyright (c) 2026 Andrey P. Khalov, Olga M. Ataeva, Natalia P. Tuchkova. Distributed under MIT (see license field)."
+}
